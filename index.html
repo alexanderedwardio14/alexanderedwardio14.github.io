@@ -11,14 +11,29 @@
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Kepoin jam</button>
         <p id="demo"></p>
         <p>hello world</p>
+    </div>
+    <button type="button" id="toggle">supris</button>
+    <div id="frame_a">
         <a href="/aboutus.html" target="iframe_a">jalan jalan ke sebelah</a>
         <a href="/qrcode.html" target="iframe_a">qr code</a>
         <a href="/calc.html" target="iframe_a">calc</a>
-        <a href="/drum.html" target="iframe_a">drummer ygy</a>
+        <a href="/drum.html" target="iframe_a">drummer ygy</a>    
+        <div>
+            <iframe src="/aboutus.html" name="iframe_a"></iframe>
+        </div>
     </div>
-    <div>
-        <iframe src="/aboutus.html" name="iframe_a"></iframe>
-    </div>
+
+    <script>
+        const targetDiv = document.getElementById("frame_a");
+        const btn = document.getElementById("toggle");
+        btn.onclick = function () {
+            if (targetDiv.style.display !== "none") {
+                targetDiv.style.display = "none";
+            } else {
+                targetDiv.style.display = "block";
+            }
+        };
+    </script>
     
 </body>
 </html>
