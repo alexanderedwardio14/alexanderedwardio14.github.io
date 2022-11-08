@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keren banget ga sih</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index">
     <div>
         <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Kepoin jam</button>
         <p id="demo"></p>
         <p>hello world</p>
     </div>
-    <button type="button" id="toggle">supris</button>
-    <div id="frame_a" style="display: none">
-        <a href="/aboutus.html" target="iframe_a">jalan jalan ke sebelah</a>
-        <a href="/qrcode.html" target="iframe_a">qr code</a>
-        <a href="/calc.html" target="iframe_a">calc</a>
-        <a href="/drum.html" target="iframe_a">drummer ygy</a>    
-        <div>
-            <iframe src="/aboutus.html" name="iframe_a"></iframe>
+    <div>
+        <button type="button" id="toggle" class="btn btn-primary">supris</button>
+    </div>
+    <div>
+        <div id="frame_a" style="display: none">
+            <a href="/aboutus.html" target="iframe_a" class="btn btn-primary">jalan jalan ke sebelah</a>
+            <a href="/qrcode.html" target="iframe_a" class="btn btn-primary">qr code</a>
+            <a href="/calc.html" target="iframe_a" class="btn btn-primary">calc</a>
+            <a href="/drum.html" target="iframe_a" class="btn btn-primary">drummer ygy</a>    
+            <div>
+                <iframe src="/aboutus.html" name="iframe_a" ></iframe>
+            </div>
         </div>
     </div>
-
     <script>
         const targetDiv = document.getElementById("frame_a");
         const btn = document.getElementById("toggle");
