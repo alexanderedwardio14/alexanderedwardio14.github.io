@@ -1,0 +1,18 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+#primary-container{
+    flex: 1;
+}
+#container-category{
+    display: flex;
+    justify-content: space-evenly;
+}
